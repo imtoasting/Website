@@ -1,48 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="bg-white text-black">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sreeman Reddy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-</head>
-<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              custom: ['Satoshi-Variable', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
     <style>
-        html,
-        body {
-            font-family: "Space Mono", monospace;
-            background: #000;
-            padding: 0;
-            margin: 0;
-        }
-        .content {
-            flex-direction: column;
-            width: fit-content;
-            display: flex;
-            height: 100vh;
-            padding: 24px;
-        }
-        p, a {
-            text-transform: uppercase;
-            font-size: 14px;
-        }
-        p {
-            margin: 0 0 12px 0;
-            color: #fff;
-        }
-        a {
-            text-decoration: none;
-            cursor: pointer;
-            color: #888;
-        }
-        a:hover {
-            color: #fff;
-        }
+      @font-face {
+        font-family: 'Satoshi-Variable';
+        src: url('./Satoshi-Variable.woff2') format('woff2'),
+             url('./Satoshi-Variable.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      input::placeholder {
+        color: #cbd5e1;
+        font-family: 'Satoshi-Variable', ui-sans-serif, system-ui, sans-serif;
+      }
     </style>
-    <div class="content">
-        <p>code.rps.io</p>
-        <a href="https://x.com/sreemanrp" target="_blank">x.com/rps</a>
-        <a href="https://rps.io" target="_blank">rps</a>
+  </head>
+  <body class="font-custom text-base px-8 py-12">
+    <div class="flex flex-col sm:flex-row sm:items-start justify-between">
+      <div>
+        <h1 class="text-2xl font-bold">Sreeman</h1>
+      </div>
+      <div class="text-xl sm:text-right mt-2 sm:mt-0">
+        <p>design ✺︎ tech ∿︎ build ◳︎</p>
+        <p>design engineer @ studio nand</p>
+        <div class="text-9xl mt-4 flex sm:justify-end gap-6 text-base">
+          <a href="https://twitter.com/arts4artist" target="_blank" class="hover:underline">twitter</a>
+          <a href="https://github.com/sreemanrp" target="_blank" class="hover:underline">github</a>
+          <a href="https://linkedin.com/in/sreemanrp" target="_blank" class="hover:underline">linkedin</a>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
